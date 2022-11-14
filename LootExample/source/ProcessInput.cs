@@ -66,10 +66,17 @@ namespace LootExample.source
         {
             while (true)
             {
-                var jsonPath = Console.ReadLine();
+                var input = Console.ReadLine();
 
-                if (LootRecords.ParseLootRecord(jsonPath))
-                    break; 
+                if (input != null && HandleAction.ContainsKey(input))
+                {
+                    HandleAction[input]();
+                }
+                else
+                {
+                    if (LootRecords.ParseLootRecord(input)) 
+                        break;
+                } 
             }
         }
 
