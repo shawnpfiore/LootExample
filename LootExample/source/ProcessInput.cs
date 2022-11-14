@@ -45,7 +45,7 @@ namespace LootExample.source
             }
             else
             {
-                Console.WriteLine($"Input {input} was not a valid input type, please try again or type help");
+                Console.WriteLine($"Input {input} was not a valid input format, please try again or type help");
             }
         }
 

@@ -29,7 +29,7 @@ namespace LootExample.source.LootModel
         {
             _path = Path.Combine(
                 Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory())) ?? string.Empty,
-                @"Data\");
+                $"Data{Path.DirectorySeparatorChar}");
 
             if (_path != null) _files = Directory.GetFiles(_path, "*.json");
 
