@@ -1,19 +1,18 @@
 ﻿using System;
 using LootExample.source;
-
 namespace LootExample
 {
-    internal static class Program
+    internal static class Program 
     {
       public static void Main()
-        {
-            ProcessInput.Reload();
-
+      {
+          var inputManager = new InputManager();
+          
             while (true)
             {
                 var input = Console.ReadLine();
 
-                ProcessInput.Process(input);
+                inputManager.Process(input);
             }
             // ReSharper disable once FunctionNeverReturns
         }

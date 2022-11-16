@@ -47,7 +47,7 @@
         <Compile Include="source\LootModel\LootRecords.cs" />
         <Compile Include="source\LootModel\LootTable.cs" />
         <Compile Include="source\LootModel\TableEntryCollection.cs" />
-        <Compile Include="source\ProcessInput.cs" />
+        <Compile Include="source\InputManager.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="Data\loot_table.json" />
